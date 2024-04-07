@@ -6,6 +6,14 @@
     <description>Recent content on Adam McBride&#39;s Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>From starting my first company at the age of 14, to building a new department at Excalibur Press, I&amp;rsquo;ve learned that the tech world isn&amp;rsquo;t just about codes and algorithms; it&amp;rsquo;s about people, the stories behind them, and their connections with each other. My combination of skills and interest in both business strategy and technology - both refined at university as well as in the real world - has given me a unique perspective, one that values both the blueprint and the hands that build from it.</description>
+    </item>
   </channel>
 </rss>
