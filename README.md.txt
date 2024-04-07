@@ -1,0 +1,3 @@
+# Adam McBride's Personal Hugo Blog
+
+Welcome to the GitHub repository of my personal blog, crafted with [Hugo](https://gohugo.io/) – a fast and modern static site generator. This blog serves as a canvas for my thoughts on software development, digital services, and neurodiversity advocacy, among other topics. I aim to share insights, tutorials, and stories that resonate with both tech enthusiasts and professionals.
