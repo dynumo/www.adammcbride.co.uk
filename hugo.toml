@@ -1,5 +1,5 @@
 baseURL = "https://www.adammcbride.co.uk/"
-title = "Adam McBride's Personal Blog"
+title = "Adam McBride"
 theme = "hugo-coder"
 languageCode = "en"
 defaultcontentlanguage = "en"
@@ -11,7 +11,7 @@ paginate = 20
   info = "Senior Developer & Neurodiversity Advocate"
   description = "Adam McBride's personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpeg"
+  avatarurl = "images/avatar.webp"
   #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
@@ -51,6 +51,11 @@ paginate = 20
   icon = "fa-brands fa-linkedin fa-2x"
   weight = 3
   url = "https://www.linkedin.com/in/adamjamesturner/"
+[[params.social]]
+  name = "YouTube"
+  icon = "fa-brands fa-youtube fa-2x"
+  weight = 4
+  url = "https://www.youtube.com/channel/UC6ILnPx2tBw_HelzY4T7Vew"
 
 # Menu links
 [[menu.main]]
@@ -66,6 +71,8 @@ paginate = 20
   weight = 3
   url = "about/"
 
-[params.analytics]
-  plausible = true # Enable Plausible
-  plausible_domain = "adammcbride.co.uk"
+[params.plausibleAnalytics]
+  domain = "adammcbride.co.uk"
+# serverURL = "analytics.example.com" # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+  outboundLinksTracking = true
+  fileDownloadsTracking = true
