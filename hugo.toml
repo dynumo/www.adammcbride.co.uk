@@ -65,3 +65,7 @@ paginate = 20
   name = "About"
   weight = 3
   url = "about/"
+
+[params.analytics]
+  plausible = true # Enable Plausible
+  plausible_domain = "adammcbride.co.uk"

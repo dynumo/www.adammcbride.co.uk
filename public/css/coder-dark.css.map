@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "D:/Web App Projects/www.adammcbride.co.uk",
+	"sourceRoot": "C:/Web App Projects/www.adammcbride.co.uk",
 	"sources": [
 		"themes/hugo-coder/assets/scss/coder-dark.scss",
 		"themes/hugo-coder/assets/scss/_variables.scss",
