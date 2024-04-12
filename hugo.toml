@@ -76,3 +76,5 @@ paginate = 20
 # serverURL = "analytics.example.com" # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
   outboundLinksTracking = true
   fileDownloadsTracking = true
+
+[params.newRelic]
