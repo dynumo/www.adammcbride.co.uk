@@ -9,16 +9,16 @@
       </h1>
     </header>
     {{ .Content }}
-    <div class="cards">
+    <ul class="cards" aria-label="Projects">
       {{ range .Pages.ByWeight }}
-      <div class="card">
-        <h3>
+      <li class="card">
+        <h2>
           {{ if .Params.link }}
-            <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}<span class="sr-only"> (opens in new tab)</span></a>
           {{ else }}
             {{ .Title }}
           {{ end }}
-        </h3>
+        </h2>
         <p>{{ .Description }}</p>
         <div class="card-meta">
           {{ if eq .Params.status "live" }}
@@ -27,8 +27,8 @@
             <span class="card-status development">Under Development</span>
           {{ end }}
         </div>
-      </div>
+      </li>
       {{ end }}
-    </div>
+    </ul>
   </section>
 {{ end }}

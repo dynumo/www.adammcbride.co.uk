@@ -50,7 +50,7 @@ paginate = 20
   name = "LinkedIn"
   icon = "fa-brands fa-linkedin fa-2x"
   weight = 3
-  url = "https://www.linkedin.com/in/adamjamesturner/"
+  url = "https://www.linkedin.com/in/adamjamesmcbride/"
 [[params.social]]
   name = "YouTube"
   icon = "fa-brands fa-youtube fa-2x"

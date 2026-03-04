@@ -14,11 +14,12 @@
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  <a class="skip-to-content sr-only-focusable" href="#main-content">Skip to content</a>
   {{ partial "float" . }}
   <main class="wrapper base2">
     {{ partial "header.html" . }}
 
-    <div class="content">
+    <div class="content" id="main-content">
       {{ block "content" . }}{{ end }}
     </div>
 
