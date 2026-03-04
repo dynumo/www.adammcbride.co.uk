@@ -1,6 +1,6 @@
 +++
 title = "Belfast Web"
-description = "Web services for Belfast businesses."
+description = "Professional managed WordPress hosting services."
 link = "https://www.belfastweb.co.uk"
 status = "live"
 weight = 3
