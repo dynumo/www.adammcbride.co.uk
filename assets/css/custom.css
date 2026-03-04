@@ -222,6 +222,14 @@ button:focus-visible {
   outline-color: #64b5f6;
 }
 
+/* Override theme flex on archive list items so children stack vertically */
+@media only screen and (min-width: 768.1px) {
+  .list .timeline > li,
+  .list .cards > li {
+    display: block;
+  }
+}
+
 /* Dot grid background canvas */
 #dot-grid-bg {
   position: fixed;
