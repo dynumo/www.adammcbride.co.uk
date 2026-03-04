@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+.cards > li {
+  display: block;
+}
+
 .card {
   border: 1px solid #e0e0e0;
   border-radius: 0.8rem;
@@ -84,6 +88,10 @@
   list-style: none;
   padding: 0;
   margin: 3.2rem 0;
+}
+
+.timeline > li {
+  display: block;
 }
 
 .timeline-item {
