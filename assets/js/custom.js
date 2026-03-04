@@ -198,8 +198,32 @@
     resizeTimer = setTimeout(onResize, 200);
   });
 
+  // Touch support for mobile/tablet
+  function onTouchMove(e) {
+    var touch = e.touches[0];
+    if (touch) {
+      mouse.x = touch.clientX;
+      mouse.y = touch.clientY;
+      if (smoothMouse.x < -999) {
+        smoothMouse.x = mouse.x;
+        smoothMouse.y = mouse.y;
+      }
+    }
+  }
+
+  function onTouchEnd() {
+    mouse.x = -9999;
+    mouse.y = -9999;
+    smoothMouse.x = -9999;
+    smoothMouse.y = -9999;
+  }
+
   document.addEventListener("mousemove", onMouseMove);
   document.addEventListener("mouseleave", onMouseLeave);
+  document.addEventListener("touchstart", onTouchMove, { passive: true });
+  document.addEventListener("touchmove", onTouchMove, { passive: true });
+  document.addEventListener("touchend", onTouchEnd);
+  document.addEventListener("touchcancel", onTouchEnd);
 
   // Watch for color scheme toggle
   var observer = new MutationObserver(function () {
