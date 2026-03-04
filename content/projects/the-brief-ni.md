@@ -1,6 +1,6 @@
 +++
 title = "The Brief NI"
-description = "Northern Ireland's legal news and information resource."
+description = "The Brief NI combines data journalism, automation, and AI to track, analyse, and critique government press releases from Northern Ireland’s departments."
 link = "https://www.thebriefni.co.uk"
 status = "live"
 weight = 1
