@@ -9,12 +9,12 @@
       </h1>
     </header>
     {{ .Content }}
-    <ul class="timeline">
+    <ul class="timeline" aria-label="Speaking engagements">
       {{ range .Pages.ByWeight }}
       <li class="timeline-item">
-        <h3>{{ .Title }}</h3>
-        <div class="timeline-role">{{ .Params.event }}</div>
-        <div class="timeline-date">{{ .Params.venue }} · {{ .Date | time.Format "2 January 2006" }}</div>
+        <h2>{{ .Title }}</h2>
+        <p class="timeline-role">{{ .Params.event }}</p>
+        <p class="timeline-date">{{ .Params.venue }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 January 2006" }}</time></p>
       </li>
       {{ end }}
     </ul>

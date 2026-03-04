@@ -9,20 +9,20 @@
       </h1>
     </header>
     {{ .Content }}
-    <div class="timeline">
+    <ul class="timeline" aria-label="Media appearances">
       {{ range .Pages.ByWeight }}
-      <div class="media-item">
-        <h3>
+      <li class="media-item">
+        <h2>
           {{ if .Params.link }}
-            <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a>
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}<span class="sr-only"> (opens in new tab)</span></a>
           {{ else }}
             {{ .Title }}
           {{ end }}
-        </h3>
-        <div class="media-outlet">{{ .Params.outlet }} · {{ .Params.type }}</div>
-        <div class="timeline-date">{{ .Date | time.Format "January 2006" }}</div>
-      </div>
+        </h2>
+        <p class="media-outlet">{{ .Params.outlet }} · {{ .Params.type }}</p>
+        <p class="timeline-date"><time datetime="{{ .Date.Format "2006-01" }}">{{ .Date | time.Format "January 2006" }}</time></p>
+      </li>
       {{ end }}
-    </div>
+    </ul>
   </section>
 {{ end }}
