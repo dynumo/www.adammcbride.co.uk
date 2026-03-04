@@ -14,6 +14,7 @@
 {{ end }}
 
 <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  <canvas id="dot-grid-bg" aria-hidden="true"></canvas>
   <a class="skip-to-content sr-only-focusable" href="#main-content">Skip to content</a>
   {{ partial "float" . }}
   <main class="wrapper base2">
