@@ -1,0 +1,148 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 2rem;
+  margin: 3.2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.card h3 a {
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.card .card-meta {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+.card .card-status {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card .card-status.live {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.card .card-status.development {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.colorscheme-dark .card {
+  border-color: #424242;
+}
+
+.colorscheme-dark .card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.colorscheme-dark .card .card-status.live {
+  background-color: #1b5e20;
+  color: #a5d6a7;
+}
+
+.colorscheme-dark .card .card-status.development {
+  background-color: #4e342e;
+  color: #ffcc80;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 3.2rem 0;
+}
+
+.timeline-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.timeline-item .timeline-role {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item .timeline-date {
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+.timeline-item .timeline-description {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.colorscheme-dark .timeline-item {
+  border-bottom-color: #424242;
+}
+
+.media-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.media-item:last-child {
+  border-bottom: none;
+}
+
+.media-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.media-item .media-outlet {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.media-item .media-description {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.colorscheme-dark .media-item {
+  border-bottom-color: #424242;
+}

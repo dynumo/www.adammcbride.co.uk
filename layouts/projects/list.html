@@ -1,0 +1,34 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <div class="cards">
+      {{ range .Pages.ByWeight }}
+      <div class="card">
+        <h3>
+          {{ if .Params.link }}
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a>
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        </h3>
+        <p>{{ .Description }}</p>
+        <div class="card-meta">
+          {{ if eq .Params.status "live" }}
+            <span class="card-status live">Live</span>
+          {{ else if eq .Params.status "development" }}
+            <span class="card-status development">Under Development</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
