@@ -1,0 +1,28 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <div class="timeline">
+      {{ range .Pages.ByWeight }}
+      <div class="media-item">
+        <h3>
+          {{ if .Params.link }}
+            <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }}</a>
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
+        </h3>
+        <div class="media-outlet">{{ .Params.outlet }} · {{ .Params.type }}</div>
+        <div class="timeline-date">{{ .Date | time.Format "January 2006" }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,22 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <ul class="timeline">
+      {{ range .Pages.ByWeight }}
+      <li class="timeline-item">
+        <h3>{{ .Title }}</h3>
+        <div class="timeline-role">{{ .Params.event }}</div>
+        <div class="timeline-date">{{ .Params.venue }} · {{ .Date | time.Format "2 January 2006" }}</div>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

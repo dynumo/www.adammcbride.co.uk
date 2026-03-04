@@ -18,14 +18,14 @@ paginate = 20
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2024
+  since = 2026
 
   enableTwemoji = true
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
 
-  # customCSS = ["css/custom.css"]
+  customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
@@ -67,8 +67,24 @@ paginate = 20
   weight = 2
   url  = "posts/"
 [[menu.main]]
-  name = "About"
+  name = "Projects"
   weight = 3
+  url = "projects/"
+[[menu.main]]
+  name = "Volunteering"
+  weight = 4
+  url = "volunteering/"
+[[menu.main]]
+  name = "Speaking"
+  weight = 5
+  url = "speaking/"
+[[menu.main]]
+  name = "Media"
+  weight = 6
+  url = "media/"
+[[menu.main]]
+  name = "About"
+  weight = 7
   url = "about/"
 
 [params.plausibleAnalytics]
